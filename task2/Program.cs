@@ -2,25 +2,17 @@
 //Сформируйте строку, в которой все заглавные буквы заменены на строчные.
 
 
-string text = "Eta sTRoKA soDerZHit latinSKie BuKvi";
-
-string Replace(string text, char oldValue, char newValue)
+char[] text = new text{ sTRoKAsRaZNYMIbukvaMI };
+char[] newStr = new newStr{ };
+string newText(char[] text)
 {
-    string result = string.Empty;
-
-    int length = text.Length;
-    for (int i = 0; i < length; i++)
+    for (int i = 0; i < text.Length; i++)
     {
-        if(text[i] == oldValue) 
-        {
-            result = result + $"{newValue}";
-        }
-        else 
-        {
-            result = result + $"{text[i]}";
-        }
+        newStr = Input.ToLower(text[i]);
+        
     }
-    return result;
 }
-string newText = Replace(text, "K", "k");
-Console.WriteLine(newText);
+System.Console.WriteLine(newText(newStr));
+
+
+// не понимаю что программе не нравится, C:\Users\natal\OneDrive\Рабочий стол\DZ_to_25.12\task2\Program.cs(6,20): error CS1001: Требуется идентификатор. [C:\Users\natal\OneDrive\Рабочий стол\DZ_to_25.12\task2\task2.csproj
